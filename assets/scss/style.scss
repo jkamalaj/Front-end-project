@@ -1,0 +1,43 @@
+header{
+    background-image: url(https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/slider/Slider-2-1920x925.png);
+    width: 100%;
+    height: 800px;
+    object-fit: contain;
+}
+.nav{
+    img{
+     margin: 22px;
+     padding-left: 35px;
+     height: 35px;
+     right: 0;
+    }
+    .nav-bar{
+        margin: 10px;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+        }
+        li{
+            list-style: none;
+            justify-content: center;
+            padding: 14px;
+           
+        }
+    }
+    .search{
+       margin: 26px;
+       margin-right: 0 ;
+        li{
+            list-style: none;
+           
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+           
+        }
+    }
+}
