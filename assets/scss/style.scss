@@ -9,6 +9,8 @@ body{
         position: relative;
         margin: auto;
         .nav{
+            position: fixed !important;
+            
             position: absolute;
             top: 0 auto;
             img{
@@ -68,7 +70,7 @@ body{
             display: none;
             img{
                width: 1691px;
-               height: 815px;
+               height: 835px;
               
             }
             button{
@@ -80,8 +82,8 @@ body{
             cursor: pointer;
             position: absolute;
             top: 50%;
-            width: 13px;
-            height: 15px;
+            width: 16px;
+            height: 35px;
             padding: 20px;
             color: rgb(244, 239, 239);
             background-color: brown;
@@ -89,12 +91,30 @@ body{
             font-weight: bold;
             font-size: 24px;
             transition: 0.6s ease;
+          
+           
+           
         }
         .next {
             right: 50px;
+            i{
+                position: absolute;
+                font-size: 25px;
+                text-align: center;
+                bottom: 8px;
+                right: 13px;
+            }
+            
           }
           .prev{
             left: 50px;
+            i{
+                position: absolute;
+                font-size: 25px;
+                text-align: center;
+                bottom: 8px;
+                left: 13px;
+            }
           }
           .prev:hover, .next:hover {
             background-color: rgba(15, 13, 13, 0.8);
@@ -118,17 +138,22 @@ body{
             font-size: 18px;
             
           }
-         
-          .dot {
-            cursor: pointer;
-            height: 10px;
-            width: 10px;
-            margin: 0 2px;
-            background-color: rgb(177, 15, 15);
-            transition: background-color 0.4s ease;
-            display:inline-block;
+         .dots{
             position: relative;
-          }
+            bottom: 30px;
+            .dot {
+                cursor: pointer;
+                height: 13px;
+                width: 13px;
+                margin: 0 2px;
+                background-color: rgb(177, 15, 15);
+                transition: background-color 0.4s ease;
+                display:inline-block;
+                position: relative;
+                
+              }
+         }
+          
           
           .active, .dot:hover {
             background-color: #1a1919;
@@ -461,18 +486,104 @@ body{
             text-align: center;
             justify-content: center;
             align-items: center;
+            margin-top: 10px;
             li{
                 list-style: none;
-                margin: 20px;
+                margin: 10px;
                 
             }
             a{
                 text-decoration: none;
-                color: #666666;
-                font-size: 18px;
+                color: #7a7a7a;
+                font-size: 16px;
+                display: inline-block;
+                letter-spacing: 0.42px;
+                font-weight: 400;
+                text-transform: capitalize;
+                line-height: 20px;
+                padding: 10px 20px;
+                position: relative;
+            }
+            a:hover{
+                
+                  
+                    color: rgb(26, 26, 26);
+                    background-color: #f5f5f5;
+                
+                
             }
         }
     }
+    .products{
+        .product-section1{
+            margin-top: 30px;
+            width: 1260px;
+            .dron-item1{
+                position: relative;
+               text-align: center;
+                .icon{
+                    width: 100%;
+                    height: 10px;
+                    position: absolute;
+                   
+                    bottom: 100px;
+                    i{
+                        color: rgb(240, 187, 16);
+                        font-size: 12px;
+                    }
+                   
+                }
+                .item-text{
+                    margin: 10px;
+                    span{
+                        color: #EB4D4B;
+                    }
+                }
+                .btn-cart{
+                    position: absolute;
+                    display: inline-block;
+                    transition: 0.5s;
+                   visibility: hidden;
+                    font-size: 13px;
+                    button{
+                       width: 120px;
+                       height: 40px;
+                        border: 0;
+                        background-color: #EB4D4B;
+                        color: #fff;
+                        text-align: center;
+                    }
+                }
+                .dron-item1:hover{
+                    .btn-cart{
+                        visibility: visible;
+                        animation: cubic-bezier(0.165, 0.84, 0.44, 1);
+                    }
+                   
+                }
+                .countdown-container{
+                    position: absolute;
+                    display: block;
+                    text-align: center;
+                    bottom: 90px;
+                    opacity: 1;
+                    padding: 4px;
+                    background-color: #fff;
+                    box-shadow: 0 0 10px 4px rgb(165 165 165 / 10%);
+                    transition: 0.5s;
+                    .counter{
+                        display: inline-block;
+                        vertical-align: middle;
+                        text-align: center;
+                        font-weight: 500;
+                        position: relative;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
     }
 
    
