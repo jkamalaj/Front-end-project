@@ -12,79 +12,293 @@
     <title>Fabolous</title>
 </head>
 <body>
-    <header>
+   
+   
+    <main>
+        <header>
        
-    <div class="slideshow-container">
-        <div class="container">
-            <div class="row">
-                <div class="nav d-flex col-lg-12">
-                    <div class="logo col-lg-3">
-                     <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/Logo.png" alt="">
-                    </div>
-                    <div class="nav-bar col-lg-5">
-                        <ul class="d-flex ">
-                            <li><a href="">Drone</a></li>
-                            <li><a href="">Accesories</a></li>
-                            <li><a href="">Collection</a></li>
-                            <li><a href="">Components</a></li>
-                            <li><a href="">Outfits</a></li>
-                        </ul>
-    
-                    </div>
-                    <div class="search col-lg-3">
-                        <ul class="d-flex ">
-                            <li><a href=""><i class="fa fa-search"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-user-large"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        </ul>
-
+            <div class="slideshow-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="nav d-flex col-lg-12">
+                            <div class="logo col-lg-3">
+                             <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/Logo.png" alt="">
+                            </div>
+                            <div class="nav-bar col-lg-5">
+                                <ul class="d-flex ">
+                                    <li><a href="">Drone</a></li>
+                                    <li><a href="">Accesories</a></li>
+                                    <li><a href="">Collection</a></li>
+                                    <li><a href="">Components</a></li>
+                                    <li><a href="">Outfits</a></li>
+                                </ul>
+            
+                            </div>
+                            <div class="search col-lg-3">
+                                <ul class="d-flex ">
+                                    <li><a href=""><i class="fa fa-search"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-user-large"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i>
+                                    <sup class="border border-danger rounded-circle px-1">
+                                        <strong id="basketCount">0</strong>
+                                    </sup>
+                                    </a></li>
+                                </ul>
+        
+                            </div>
+                        </div>
+                       
+                        
                     </div>
                 </div>
                
-                
+                <div class="MySlides ">
+                        <a href="">
+                            <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/slider/Slider-1-1920x925.png" alt="">
+                           </a> 
+                            <div class="text col-lg-5 col-md-6 col-sm-6 col-xs-5 ">
+                                <h4> Clear 4k Camera</h4>
+                                <h2>Underwater Drone</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor facere ullam ratione harum! Hic dolor nesciunt, natus fugit repudiandae, ipsum illum asperiores maxime vel voluptate officiis</p>
+                                <button type="button" class="btn btn-danger">SHOP NOW</button>
+                           </div>
+                                
+                      
+                </div>
+                <div class="MySlides">
+                    <a href="">
+                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/slider/Slider-2-1920x925.png" alt="">
+                       </a> 
+                        <div class="texts col-lg-5 col-md-6 col-sm-6 col-xs-5 ">
+                            <h4> Clear 4k Camera</h4>
+                            <h2>Fast Drone Delivery</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor facere ullam ratione harum! Hic dolor nesciunt, natus fugit repudiandae, ipsum illum asperiores maxime vel voluptate officiis</p>
+                            <button type="button" class="btn btn-danger">SHOP NOW</button>
+                       </div>
+            
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                  </div>
+                <button class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="next" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></button>
+                <br>
+               
+            </div>
+           
+            </header>
+        <section>
+            <div class="animation">
+             <div class="row">
+                 <div class="container">
+                    <div class="services d-flex  col-lg-3 col-md-3 col-sm-6 col-sm-6">
+                         <div class="service-img col-lg-3">
+                            <a href="#">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/Service/Services-1-50x50.png" alt=""></a>
+                                <a href="">
+                                <h5>Free Delivery</h5>
+                                <p>Lorem ipsum is simply dummy text of the Testing Online</p>
+                            </a>
+                           
+                             
+                         </div>
+                         <div class="service-img col-lg-3">
+                            <a href="#">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/Service/Services-2-50x50.png" alt=""></a>
+                                <a href="">
+                                <h5>Way To Buy</h5>
+                                <p>Lorem ipsum is simply dummy text of the Testing Online</p>
+                            </a>
+                           
+                             
+                         </div>
+                         <div class="service-img col-lg-3">
+                            <a href="#">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/Service/Services-3-50x50.png" alt=""></a>
+                                
+                                <a href="">
+                                <h5>Personal Session</h5>
+                                <p>Lorem ipsum is simply dummy text of the Testing Online</p>
+                            </a>
+                           
+                             
+                         </div>
+                         <div class="service-img col-lg-3">
+                            <a href="#">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/Service/Services-4-50x50.png" alt=""></a>
+                                <a href="">
+                                <h5>Gift Voucher</h5>
+                                <p>Lorem ipsum is simply dummy text of the Testing Online</p>
+                            </a>
+                           
+                             
+                         </div>
+                    
+                    
+     
+                    </div>
+                 </div>
+                </div>
+      
+             
+            </div>
+         
+      </section>
+      <section>
+        <div class="container">
+            <div class="title">
+                <div class="row d-flex justify-content-around">
+                    <div class="drone-image col-lg-6">
+                    <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/storyblock.png" alt="">
+    
+                    </div>
+                    <div class="drone-about col-lg-6">
+                      <p><b> THE    PRODUCTS</b></p>
+                      <h1>All About Fabolous</h1>
+
+                      <div class="horizontal">
+                      </div>
+                      <p class="title">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, to make a type specimen book.
+                        
+                      </p>
+                      <div class="category-list d-flex justify-content-around ">
+                       
+                            <ul>
+                                <li>
+                                    Eye and facial makeup</li>
+                                <li>Hair serum</li>
+                                <li>Makeup Brush</li>
+                                <li>Professional Powder</li>
+                                <li>Lipstick NailArt</li>
+                                <li>Skincare Cream</li>
+                                <li>Hair Shampoo</li>
+                                <li>Facial Kit</li>
+                            </ul>
+
+                      </div>
+                      <button type="button" class="btn">VIEW MORE</button>
+                       
+                       
+    
+                      </div>
+                     
+                     
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      </section>
+      <section>
+        <div class="test">
+           <div class="section">
+            <div class="section-header">
+                <p><b> THE    PRODUCTS</b></p>
+                <h1>Customer Review</h1>
+                <div class="horizontal">
+                  
+                  </div>
+            </div>
+            
+           </div>
+           <div class="users d-flex justify-content-around ">
+            <div class="users-details col-lg-4">
+                <div class="user-image">
+<img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/testimonial/Testimonial-1.png" alt="">
+                </div>
+                <div class="user-description">
+                    
+                                There are many variations of lorem ipsum available, but the have suffered alteration in some form by humour.”Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            
+                </div>
+                <div class="user-detail">
+                   <span class="title">luies charls</span>
+                   <span class="text-danger">Web Designer</span>
+                </div>
+            </div>
+            <div class="users-details col-lg-4">
+                <div class="user-image">
+<img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/testimonial/Testimonial-2.png" alt="">
+                </div>
+                <div class="user-description">
+                    
+                                There are many variations of lorem ipsum available, but the have suffered alteration in some form by humour.”Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            
+                </div>
+                <div class="user-detail">
+                   <span class="title">luies charls</span>
+                   <span class="text-danger">Web Designer</span>
+                </div>
+            </div>
+            <div class="users-details col-lg-4">
+                <div class="user-image">
+<img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/testimonial/Testimonial-3.png" alt="">
+                </div>
+                <div class="user-description">
+                    
+                                There are many variations of lorem ipsum available, but the have suffered alteration in some form by humour.”Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            
+                </div>
+                <div class="user-detail">
+                   <span class="title">luies charls</span>
+                   <span class="text-danger">Web Designer</span>
+                </div>
             </div>
         </div>
-       
-        <div class="MySlides ">
-                <a href="">
-                    <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/slider/Slider-1-1920x925.png" alt="">
-                   </a> 
-                    <div class="text col-lg-5 col-md-6 col-sm-6 col-xs-5 ">
-                        <h4> Clear 4k Camera</h4>
-                        <h2>Underwater Drone</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor facere ullam ratione harum! Hic dolor nesciunt, natus fugit repudiandae, ipsum illum asperiores maxime vel voluptate officiis</p>
-                        <button type="button" class="btn btn-danger">SHOP NOW</button>
-                   </div>
-                        
-              
+
+        <div class="desc">
+            <button class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="next" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></button>
         </div>
-        <div class="MySlides">
-            <a href="">
-                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/slider/Slider-2-1920x925.png" alt="">
-               </a> 
-                <div class="texts col-lg-5 col-md-6 col-sm-6 col-xs-5 ">
-                    <h4> Clear 4k Camera</h4>
-                    <h2>Fast Drone Delivery</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor facere ullam ratione harum! Hic dolor nesciunt, natus fugit repudiandae, ipsum illum asperiores maxime vel voluptate officiis</p>
-                    <button type="button" class="btn btn-danger">SHOP NOW</button>
-               </div>
-    
         </div>
+      </section>
+      <section>
+        <div class="container">
+            <div class="row">
+              <div class="products-section">
+                <div class="text">
+                    <p><b> THE    PRODUCTS</b></p>
+                    <h1>Fabulaus Products</h1>
+                    <div class="horizontal">
+                  
+                    </div>
+                    <ul class="product-section nav nav-tabs clearfix ">
+                        <li class="nav-item">
+                            <a href="">Featured</a>
+                        </li>
+                        <li class="nav-item"><a href="">Best Sellers</a></li>
+                        <li class="nav-item"><a href="">New Arrivals</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="products">
 
-        <button class="prev" onclick="plusSlides(-1)"><</button>
-        <button class="next" onclick="plusSlides(1)">></button>
-        <br>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-          </div>
-    </div>
-   
-    </header>
-   
-    
-
-
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section>
+        <!-- <div class="accordions-section">
+            <div class="row">
+                <div class="container">
+                    <div class="accordion-text">
+                        <p><b> THE    PRODUCTS</b></p>
+                        <h1>FAQ's</h1>
+                        <div class="horizontal">
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+      
+      </section>
+     
+    </main>
+ 
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
