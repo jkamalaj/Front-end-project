@@ -3,45 +3,38 @@ body {
   height: auto;
 }
 
-.slideshow-container {
-  width: auto;
-  height: 800px;
-  position: relative;
-  margin: auto;
+.nav {
+  position: fixed;
+  height: 100px;
 }
-.slideshow-container .nav {
-  position: fixed !important;
-  position: absolute;
-  top: 0 auto;
-}
-.slideshow-container .nav img {
+.nav img {
   margin: 22px;
   padding-left: 35px;
   height: 35px;
   right: 0;
 }
-.slideshow-container .nav .nav-bar {
+.nav .nav-bar {
   margin: 10px;
 }
-.slideshow-container .nav .nav-bar a {
+.nav .nav-bar a {
   text-decoration: none;
-  color: white;
+  color: rgb(245, 240, 240);
   font-size: 17px;
 }
-.slideshow-container .nav .nav-bar li {
+.nav .nav-bar li {
   list-style: none;
   justify-content: center;
   padding: 14px;
 }
-.slideshow-container .nav .nav-bar .drone .drone1 {
+.nav .nav-bar .drone .drone1 {
   position: relative;
   width: 320px;
   text-align: left;
 }
-.slideshow-container .nav .nav-bar .drone .drone1 .drones {
+.nav .nav-bar .drone .drone1 .drones {
   margin: 50px;
 }
-.slideshow-container .nav .nav-bar .drone .drone1 .drones ul {
+.nav .nav-bar .drone .drone1 .drones ul {
   position: absolute;
   top: 20px;
   opacity: 0;
@@ -50,43 +43,50 @@ body {
   background-color: white;
   transition: 0.3s;
 }
-.slideshow-container .nav .nav-bar .drone .drone1 .drones ul li {
+.nav .nav-bar .drone .drone1 .drones ul li {
   font-size: 18px;
   color: black;
 }
-.slideshow-container .nav .nav-bar .drone .drone1 .drones ul li a {
+.nav .nav-bar .drone .drone1 .drones ul li a {
   font-size: 16px;
   color: #7a7a7a;
 }
-.slideshow-container .nav .nav-bar .drone .drone1 .drones ul a:hover {
+.nav .nav-bar .drone .drone1 .drones ul a:hover {
   color: #1a1919;
 }
-.slideshow-container .nav .nav-bar .drone .drone1 .drones .drone li:hover ul {
+.nav .nav-bar .drone .drone1 .drones .drone li:hover ul {
   top: 40px;
   opacity: 1;
 }
-.slideshow-container .nav .nav-bar li:hover a {
+.nav .nav-bar li:hover a {
   color: rgb(19, 17, 17);
 }
-.slideshow-container .nav .search {
+.nav .search {
   margin: 26px;
   margin-right: 0;
 }
-.slideshow-container .nav .search li {
+.nav .search li {
   list-style: none;
 }
-.slideshow-container .nav .search a {
+.nav .search a {
   text-decoration: none;
   color: white;
   padding: 15px;
   font-size: 18px;
 }
-.slideshow-container .nav .search a sup {
+.nav .search a sup {
   left: 0px;
   background-color: brown;
 }
-.slideshow-container .nav .search li:hover a {
+.nav .search li:hover a {
   color: rgb(19, 17, 17);
+}
+
+.slideshow-container {
+  width: auto;
+  height: 800px;
+  position: relative;
+  margin: auto;
 }
 .slideshow-container .MySlides {
   display: none;
@@ -138,20 +138,55 @@ body {
 }
 .slideshow-container .text {
   color: #f2f2f2;
-  font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  right: 0px;
-  top: 50%;
+  width: 480px;
+  right: 15%;
+  top: 28%;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.slideshow-container .text h4 {
+  font-size: 38px;
+  margin: 0px 0px 20px;
+}
+.slideshow-container .text h2 {
+  font-size: 74px;
+  margin: 0px 0px 27px;
+  letter-spacing: 0.7px;
+  text-transform: unset;
+  line-height: 80px;
 }
 .slideshow-container .texts {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  left: 90px;
-  top: 40%;
-  font-size: 18px;
+  left: 11%;
+  width: 540px;
+  top: 28%;
+  letter-spacing: 0.7px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.slideshow-container .texts h4 {
+  font-size: 38px;
+  margin: 0px 0px 20px;
+}
+.slideshow-container .texts h2 {
+  text-transform: unset;
+  font-size: 74px;
+  margin: 0px 0px 27px;
+  letter-spacing: 0.7px;
+  line-height: 80px;
 }
 .slideshow-container .dots {
   position: relative;
@@ -189,6 +224,9 @@ body {
 .animation .row .container .services .service-img a {
   text-decoration: none;
   color: black;
+}
+.animation .row .container .services .service-img a img:hover {
+  transform: rotateX(360deg);
 }
 .animation .row .container .services .service-img a h5 {
   margin: 10px;
@@ -563,7 +601,7 @@ body {
 .footer {
   background-color: #f2f6f9;
   width: 100%;
-  height: 800px;
+  height: 750px;
 }
 .footer .contact {
   width: 500;
@@ -648,15 +686,6 @@ body {
   border-radius: 20px;
   background-color: #EB4D4B;
 }
-.footer .subscribe .texts .extras ul li {
-  padding: 20px;
-}
-.footer .subscribe .texts .extras ul li a {
-  text-decoration: none;
-}
-.footer .subscribe .texts .company ul li a {
-  text-decoration: none;
-}
 .footer .subscribe .sosial {
   margin-left: 28%;
 }
@@ -726,4 +755,66 @@ body {
   height: 4px;
   background-color: #EB4D4B;
   margin-left: 42%;
+}
+
+.texts {
+  width: 100%;
+  height: 30px;
+}
+.texts #extras-container {
+  text-align: center;
+  margin-left: 34%;
+  margin-top: 30px;
+}
+.texts #extras-container ul li {
+  padding: 15px;
+}
+.texts #extras-container ul li a {
+  text-decoration: none;
+  color: #5c5c5c;
+}
+.texts #extras-container ul li .span {
+  position: absolute;
+  content: "";
+  left: auto;
+  right: -10px;
+  width: 1px;
+  height: 15px;
+  top: 4px;
+  background: rgba(102, 102, 102, 0.2);
+}
+.texts #company-container {
+  text-align: center;
+  margin-left: 33%;
+}
+.texts #company-container ul li {
+  padding: 15px;
+}
+.texts #company-container ul li a {
+  text-decoration: none;
+  color: #5c5c5c;
+}
+
+.footerend {
+  background-color: #1a1919;
+  width: 100%;
+  height: 55px;
+}
+.footerend a {
+  text-decoration: none;
+  color: white;
+}
+.footerend p {
+  color: white;
+  letter-spacing: 0.7px;
+}
+.footerend .footer-text {
+  margin: 15px;
+}
+.footerend .footer-img {
+  margin-left: 25%;
+}
+.footerend .footer-img img {
+  padding: 7px;
+  margin-top: 6px;
 }/*# sourceMappingURL=style.css.map */
