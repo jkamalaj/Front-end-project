@@ -33,6 +33,38 @@ body {
   justify-content: center;
   padding: 14px;
 }
+.slideshow-container .nav .nav-bar .drone .drone1 {
+  position: relative;
+  width: 320px;
+  text-align: left;
+}
+.slideshow-container .nav .nav-bar .drone .drone1 .drones {
+  margin: 50px;
+}
+.slideshow-container .nav .nav-bar .drone .drone1 .drones ul {
+  position: absolute;
+  top: 20px;
+  opacity: 0;
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  transition: 0.3s;
+}
+.slideshow-container .nav .nav-bar .drone .drone1 .drones ul li {
+  font-size: 18px;
+  color: black;
+}
+.slideshow-container .nav .nav-bar .drone .drone1 .drones ul li a {
+  font-size: 16px;
+  color: #7a7a7a;
+}
+.slideshow-container .nav .nav-bar .drone .drone1 .drones ul a:hover {
+  color: #1a1919;
+}
+.slideshow-container .nav .nav-bar .drone .drone1 .drones .drone li:hover ul {
+  top: 40px;
+  opacity: 1;
+}
 .slideshow-container .nav .nav-bar li:hover a {
   color: rgb(19, 17, 17);
 }
@@ -332,61 +364,9 @@ body {
   background-color: black;
 }
 
-.accordions-section {
-  width: 100%;
-  height: 700px;
-  background-color: #FBFBFB;
-}
-.accordions-section .accordion-text {
-  text-align: center;
-  width: 1170px;
-  margin-bottom: 25px;
-  margin-left: 230px;
-  margin-top: 70px;
-  align-items: center;
-}
-.accordions-section .accordion-text p b {
-  font-family: "Poppins", sans-serif;
-  color: #eb4d4b;
-  font-size: 16px;
-  letter-spacing: 8px;
-  font-weight: 500;
-  margin-bottom: 12px;
-  padding-left: 40px;
-  font-style: bold;
-}
-.accordions-section .accordion-text h1 {
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 600;
-  color: #222;
-  font-family: "Poppins", sans-serif;
-  padding-left: 40px;
-}
-.accordions-section .accordion-text .horizontal {
-  width: 80px;
-  height: 4px;
-  background-color: #EB4D4B;
-  margin-left: 48%;
-}
-.accordions-section .accordions {
-  width: 994;
-  height: 50px;
-  margin: 30px;
-}
-.accordions-section .accordions a {
-  text-decoration: none;
-  color: black;
-  position: relative;
-  display: block;
-}
-.accordions-section .accordions p {
-  color: #787878;
-}
-
 .products-section {
   width: 1270;
-  height: 1668px;
+  height: 1300px;
 }
 .products-section .text {
   text-align: center;
@@ -508,4 +488,242 @@ body {
   font-weight: 500;
   position: relative;
   cursor: pointer;
+}
+
+.accordions-section {
+  width: 100%;
+  height: 876px;
+  background-color: #f2f6f9;
+}
+.accordions-section .accordion-text {
+  text-align: center;
+  width: 1170px;
+  margin-bottom: 25px;
+  margin-left: 40px;
+  margin-top: 130px;
+  align-items: center;
+}
+.accordions-section .accordion-text p b {
+  font-family: "Poppins", sans-serif;
+  color: #eb4d4b;
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  padding-left: 40px;
+  font-style: bold;
+}
+.accordions-section .accordion-text h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  padding-left: 40px;
+}
+.accordions-section .accordion-text .horizontal {
+  width: 80px;
+  height: 4px;
+  background-color: #EB4D4B;
+  margin-left: 48%;
+}
+.accordions-section .accordion {
+  width: 990px;
+  margin-left: 140px;
+}
+.accordions-section .accordion .accordion-item {
+  background-color: #f2f6f9;
+  border: none;
+}
+.accordions-section .accordion button {
+  background-color: #f2f6f9;
+  color: black;
+  font-size: 20px;
+}
+.accordions-section .accordion button b {
+  margin: 10px;
+}
+.accordions-section .accordion p {
+  color: #7a7a7a;
+}
+
+.brands {
+  margin-top: 80px;
+  width: 100%;
+  height: 140px;
+}
+.brands .brand:hover a {
+  transform: rotateX(360deg);
+}
+.brands .brand {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer {
+  background-color: #f2f6f9;
+  width: 100%;
+  height: 800px;
+}
+.footer .contact {
+  width: 500;
+  height: 370;
+  border: 1px solid #c8c5c5;
+  margin-top: 100px;
+}
+.footer .contact .col input {
+  border-radius: 14px;
+  margin-top: 20px;
+}
+.footer .contact .message textarea {
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 150px;
+}
+.footer .contact button {
+  border-radius: 25px;
+  width: 140px;
+  height: 45px;
+  margin: 30px;
+  font-size: 14px;
+  margin-left: 230px;
+  background-color: #eb4d4b;
+}
+.footer .contact .contact-text {
+  text-align: center;
+  width: 575px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+.footer .contact .contact-text p b {
+  font-family: "Poppins", sans-serif;
+  color: #eb4d4b;
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-style: bold;
+}
+.footer .contact .contact-text h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+}
+.footer .contact .contact-text .horizontal {
+  width: 80px;
+  height: 4px;
+  background-color: #EB4D4B;
+  margin-left: 42%;
+}
+.footer .subscribe {
+  border: 1px solid #c8c5c5;
+  margin-top: 100px;
+}
+.footer .subscribe .icon {
+  width: 100%;
+  height: 40px;
+  font-size: 50px;
+  color: #EB4D4B;
+  margin-left: 45%;
+}
+.footer .subscribe .text {
+  margin-top: 40px;
+  text-align: center;
+}
+.footer .subscribe .text p {
+  color: #686767;
+}
+.footer .subscribe .col {
+  margin-left: 30px;
+}
+.footer .subscribe .col input {
+  height: 45px;
+  border-radius: 20px;
+}
+.footer .subscribe .col button {
+  width: 120px;
+  height: 45px;
+  border-radius: 20px;
+  background-color: #EB4D4B;
+}
+.footer .subscribe .texts .extras ul li {
+  padding: 20px;
+}
+.footer .subscribe .texts .extras ul li a {
+  text-decoration: none;
+}
+.footer .subscribe .texts .company ul li a {
+  text-decoration: none;
+}
+.footer .subscribe .sosial {
+  margin-left: 28%;
+}
+.footer .subscribe .sosial ul {
+  padding: 15px;
+  margin: 10px;
+}
+.footer .subscribe .sosial ul li {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 3px;
+  margin: 3px 3px;
+  position: relative;
+  text-align: center;
+  transition: 0.4s;
+}
+.footer .subscribe .sosial ul li a {
+  color: white;
+  font-size: 18px;
+}
+.footer .subscribe .sosial ul li.facebook {
+  background-color: #3b5999;
+}
+.footer .subscribe .sosial ul li.twitter {
+  background-color: #00ACED;
+}
+.footer .subscribe .sosial ul li.youtube {
+  background-color: #D12121;
+}
+.footer .subscribe .sosial ul li.google {
+  background-color: #DC473B;
+}
+.footer .subscribe .sosial ul li.pinterest {
+  background-color: #CB2027;
+}
+.footer .subscribe .sosial ul li.instagram {
+  background-color: #CC2366;
+}
+.footer .contact-text {
+  text-align: center;
+  width: 575px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+.footer .contact-text p b {
+  font-family: "Poppins", sans-serif;
+  color: #eb4d4b;
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-style: bold;
+}
+.footer .contact-text h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+}
+.footer .contact-text .horizontal {
+  width: 80px;
+  height: 4px;
+  background-color: #EB4D4B;
+  margin-left: 42%;
 }/*# sourceMappingURL=style.css.map */
