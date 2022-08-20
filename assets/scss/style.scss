@@ -13,10 +13,11 @@ body{
      right: 0;
     }
     .nav-bar{
-        margin: 10px;
+        margin-left: -20px;
+        margin-top: 13px;
         a{
             text-decoration: none;
-            color: rgb(245, 240, 240);
+            color: rgb(241, 233, 233);
             font-size: 17px;
         }
         li{
@@ -27,25 +28,26 @@ body{
         }
        
          .drone{
+            position: relative;
             .drone1{
-                position: relative;
+                position: absolute;
                  width: 320px;
-                   text-align: left;
                    .drones{
-                    margin: 50px;
                    
+                    margin: 40px;
+                  
                     ul{
-                        position: absolute;
+                       position: absolute;
                     top: 20px;
                    opacity: 0;
-                    width: 300px;
+                    width: 270px;
                     height:250px ;
                     background-color: white;
                     transition: .3s;
                        
                         li{
-                            font-size: 18px;
-                            color: black;
+                            font-size: 15px;
+                            color: rgb(0, 0, 0);
                            
                             a{
                                 font-size: 16px;
@@ -53,63 +55,72 @@ body{
                             }
                         }
                         a:hover{
-                            color: #1a1919;
+                            color: #000000;
                         }
                        
                     }
-                    .drone li:hover {
-                        ul{
-                            top: 40px;
-                           opacity: 1;
-                        }
-                       
-                     }
+                 
                     
                   
                    }
                   
          }
-         
         
+         }
+         .drone li:hover {
+            .drone1{
+            .drones{
+                ul{
+                    top: 40px;
+                   opacity: 1;
+                }
 
-      
-    
+            }
+                
+                  
+                }
+          
+        
+   
   }
         
     }
+   
    .nav-bar li:hover{
     a{
-        color: rgb(19, 17, 17);
+        color: rgb(14, 13, 13);
     }
     
    }
     .search{
        margin: 26px;
-       margin-right: 0 ;
+       margin-left: -10px ;
         li{
             list-style: none;
            
         }
         a{
             text-decoration: none;
-            color: white;
+            color: rgb(235, 228, 228);
             padding: 15px;
             font-size: 18px;
             sup{
-                left: 0px;
-                background-color: brown;
+                left: -8px;
+                background-color: rgb(215, 65, 65);
+                color: white;
+                font-size: 11px;
+                top: -11px;
             }
            
         }
     }
     .search li:hover{
         a{
-            color: rgb(19, 17, 17);
+            color: rgb(19, 18, 18);
         }
        
     }
 }
-
  .slideshow-container{
     width: auto;
         height: 800px;
@@ -699,34 +710,39 @@ body{
     .footer{
         background-color: #f2f6f9;
         width: 100%;
-        height: 750px;
+        height: 690px;
+        margin-top: 50px;
         .contact{
-            width: 500;
-            height: 370;
-            border: 1px solid #c8c5c5;
-            margin-top: 100px;
+            width: 560px;
+            height: 451px;
+            border: 1px solid rgba(102, 102, 102, 0.15);
+            margin-top: 80px;
             .col{
                 
                 input{
                     border-radius: 14px;
                     margin-top: 20px;
+                    border-color:#e9e9e9 ;
+                    font-size: 15px;
+                    columns: #555;
                 }
             }
             .message{
                 textarea{
                     margin-top: 20px;
                     border-radius: 20px;
-                    height: 150px;
+                    height: 135px;
+                    border-color:#e9e9e9 ;
                     
                 }
             }
             button{
                 border-radius:25px ;
                 width: 140px;
-                height: 45px;
-                margin: 30px;
+                height: 48px;
+                margin: 13px;
                 font-size: 14px;
-                margin-left: 230px;
+                margin-left: 189px;
                 background-color: #eb4d4b;
             }
             .contact-text{
@@ -734,6 +750,7 @@ body{
                 width: 575px;
                 margin-bottom: 25px;
                 margin-top: 30px;
+                margin-left: -22px;
               
                 p{
                     b{
@@ -743,7 +760,6 @@ body{
                         letter-spacing: 8px;
                         font-weight: 500;
                         margin-bottom: 12px;
-                       
                         font-style: bold;
                     }
                     
@@ -766,8 +782,11 @@ body{
             
         }
         .subscribe{
-            border: 1px solid #c8c5c5;
-            margin-top: 100px;
+            width: 560px;
+            height: 451px;
+            border: 1px solid rgba(102, 102, 102, 0.15);
+            margin-top: 80px;
+            
             
             .icon{
                 width: 100%;
@@ -790,6 +809,7 @@ body{
                 input{
                     height: 45px;
                   border-radius: 20px;
+                  border-color:  #e9e9e9;
                 }
                 button{
                     width: 120px;
@@ -800,7 +820,7 @@ body{
             }
            
             .sosial{
-                margin-left: 28%;
+                margin-left: 21%;
                 ul{
                     padding: 15px;
                     margin: 10px;
@@ -853,7 +873,7 @@ body{
                 width: 575px;
                 margin-bottom: 25px;
                 margin-top: 30px;
-                
+                margin-left: -22px;
                 p{
                     b{
                         font-family:'Poppins', sans-serif;
@@ -888,45 +908,61 @@ body{
         .texts{
             width: 100%;
             height: 30px;
+            
             #extras-container{
                 text-align: center;
                 margin-left: 34%;
-                margin-top: 30px;
+                margin-top: 29px;
+               
              ul{
                
                  li{
-                    padding: 15px;
+                    padding: 10px;
                      a{
                          text-decoration:none ;
-                         color: #5c5c5c;
+                         color: #666666;
+                         font-size: 14px;
+                         font-family: sans-serif;
+                         letter-spacing: 1px;
+                     }
+                    
+    
                      }
                      .span{
-                        position: absolute;
-                        content: "";
-                        left: auto;
-                        right: -10px;
+                        position: relative;
                         width: 1px;
-                        height: 15px;
-                        top: 4px;
-                        background: rgba(102,102,102,0.2);
-
-                     }
+                        height: 17px;
+                        margin-top: 15px;
+                        background: rgba(32, 31, 31, 0.2);
                  }
+                  
              }
            
             }
             #company-container{
                 text-align: center;
+                margin-top: -18px;
                 margin-left: 33%;
               
              ul{
                  li{
-                    padding: 15px;
+                    padding: 10px;
                      a{
                          text-decoration:none ;
-                         color: #5c5c5c;
+                         color: #666666;
+                         font-size: 14px;
+                         font-family: sans-serif;
+                         letter-spacing: 1px;
                      }
                  }
+                 .span{
+                    position: relative;
+                    width: 1px;
+                    height: 17px;
+                    margin-top: 19px;
+                    background: rgba(32, 31, 31, 0.2);
+             }
+              
              }
             }
          }
@@ -934,7 +970,7 @@ body{
             background-color: #1a1919;
             width: 100%;
             height: 55px;
-            
+            bottom: 0px;
             a{
                 text-decoration: none;
                 color: white;
@@ -955,6 +991,5 @@ body{
             }
          }
     
-
    
     
