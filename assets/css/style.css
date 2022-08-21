@@ -57,8 +57,41 @@ body {
 .nav .nav-bar .drone .drone1 .drones ul a:hover {
   color: #000000;
 }
+.nav .nav-bar .drone .drone2 {
+  position: absolute;
+  width: 300px;
+}
+.nav .nav-bar .drone .drone2 .drones {
+  margin: 20px;
+}
+.nav .nav-bar .drone .drone2 .drones ul {
+  position: absolute;
+  top: 20px;
+  opacity: 0;
+  width: 210px;
+  height: 240px;
+  background-color: white;
+  transition: 0.3s;
+}
+.nav .nav-bar .drone .drone2 .drones ul li {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+.nav .nav-bar .drone .drone2 .drones ul li a {
+  font-size: 16px;
+  color: #7a7a7a;
+}
+.nav .nav-bar .drone .drone2 .drones ul a:hover {
+  color: #000000;
+}
 .nav .nav-bar .drone li:hover .drone1 .drones ul {
   top: 40px;
+  opacity: 1;
+}
+.nav .nav-bar .drone li:hover .drone2 {
+  top: 25px;
+}
+.nav .nav-bar .drone li:hover .drone2 .drones ul {
   opacity: 1;
 }
 .nav .nav-bar li:hover a {
@@ -121,6 +154,7 @@ body {
 }
 .slideshow-container .next {
   right: 50px;
+  opacity: 0;
 }
 .slideshow-container .next i {
   position: absolute;
@@ -131,6 +165,7 @@ body {
 }
 .slideshow-container .prev {
   left: 50px;
+  opacity: 0;
 }
 .slideshow-container .prev i {
   position: absolute;
@@ -149,23 +184,62 @@ body {
   width: 480px;
   right: 15%;
   top: 28%;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
 }
-.slideshow-container .text h4 {
-  font-size: 38px;
-  margin: 0px 0px 20px;
+.slideshow-container .text .line {
+  width: 100%;
+  overflow: hidden;
 }
-.slideshow-container .text h2 {
+.slideshow-container .text .line h2 {
   font-size: 74px;
   margin: 0px 0px 27px;
   letter-spacing: 0.7px;
   text-transform: unset;
   line-height: 80px;
+}
+.slideshow-container .text .line h4 {
+  font-size: 38px;
+}
+.slideshow-container .text .line .lineUp {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation: 2s anim-lineUp ease-in-out;
+          animation: 2s anim-lineUp ease-in-out;
+}
+@-webkit-keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 .slideshow-container .texts {
   color: #f2f2f2;
@@ -176,16 +250,44 @@ body {
   width: 540px;
   top: 28%;
   letter-spacing: 0.7px;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
 }
-.slideshow-container .texts h4 {
+.slideshow-container .texts .line {
+  width: 100%;
+  overflow: hidden;
+}
+.slideshow-container .texts .line h4 {
   font-size: 38px;
   margin: 0px 0px 20px;
+}
+.slideshow-container .texts .line h2 {
+  font-size: 74px;
+  margin: 0px 0px 27px;
+  letter-spacing: 0.7px;
+  line-height: 80px;
+}
+.slideshow-container .texts .line .lineUp {
+  -webkit-animation: 2s anim-lineUp ease-in-out;
+          animation: 2s anim-lineUp ease-in-out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 .slideshow-container .texts h2 {
   text-transform: unset;
@@ -212,6 +314,13 @@ body {
   background-color: #1a1919;
 }
 
+.slideshow-container:hover .prev {
+  opacity: 1;
+}
+.slideshow-container:hover .next {
+  opacity: 1;
+}
+
 .animation .row {
   background-color: #FBFBFB;
   height: 320px;
@@ -231,14 +340,37 @@ body {
   text-decoration: none;
   color: black;
 }
-.animation .row .container .services .service-img a img:hover {
-  transform: rotateX(360deg);
-}
 .animation .row .container .services .service-img a h5 {
   margin: 10px;
 }
 .animation .row .container .services .service-img a p {
   color: #7a7a7a;
+}
+.animation .row .container .services .service-img:hover a .rotate {
+  -webkit-animation: 1s rotate ease-in-out;
+          animation: 1s rotate ease-in-out;
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotateY(360deg);
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(360deg);
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
 }
 
 .title {
@@ -454,7 +586,7 @@ body {
   list-style: none;
   margin: 10px;
 }
-.products-section .text ul a {
+.products-section .text ul li a {
   text-decoration: none;
   color: #7a7a7a;
   font-size: 16px;
@@ -464,14 +596,13 @@ body {
   text-transform: capitalize;
   line-height: 20px;
   padding: 10px 20px;
-  position: relative;
+  position: absolute;
 }
 .products-section .text ul a:hover {
   color: rgb(26, 26, 26);
-  background-color: #f5f5f5;
 }
 .products-section .products .product-section1 {
-  margin-top: 30px;
+  margin-top: 80px;
   width: 1260px;
 }
 .products-section .products .product-section1 .dron-item1 {
@@ -594,14 +725,26 @@ body {
 .brands {
   margin-top: 80px;
   width: 100%;
-  height: 140px;
-}
-.brands .brand:hover a {
-  transform: rotateX(360deg);
+  height: 80px;
 }
 .brands .brand {
   display: inline-block;
   vertical-align: middle;
+}
+.brands .brand:hover a .rotate {
+  -webkit-animation: 2s rotate ease-in-out;
+          animation: 2s rotate ease-in-out;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(360deg);
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
 }
 
 .footer {
@@ -846,4 +989,8 @@ body {
 .footerend .footer-img img {
   padding: 7px;
   margin-top: 6px;
+}
+
+body {
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */
