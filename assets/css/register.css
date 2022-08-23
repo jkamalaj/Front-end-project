@@ -36,7 +36,7 @@ body {
   width: 350px;
 }
 .nav .nav-bar .drone .drone1 .drones {
-  margin: 30px;
+  margin: 35px;
 }
 .nav .nav-bar .drone .drone1 .drones ul {
   position: absolute;
@@ -64,11 +64,10 @@ body {
   width: 300px;
 }
 .nav .nav-bar .drone .drone2 .drones {
-  margin: 20px;
+  margin: 15px;
 }
 .nav .nav-bar .drone .drone2 .drones ul {
   position: absolute;
-  top: 20px;
   opacity: 0;
   width: 210px;
   height: 170px;
@@ -83,18 +82,21 @@ body {
 .nav .nav-bar .drone .drone2 .drones ul li a {
   font-size: 16px;
   color: #7a7a7a;
+  font-weight: 400;
 }
 .nav .nav-bar .drone .drone2 .drones ul a:hover {
   color: #000000;
 }
 .nav .nav-bar .drone li:hover .drone1 {
   top: 25px;
+  margin: 25px;
 }
 .nav .nav-bar .drone li:hover .drone1 .drones ul {
   opacity: 1;
 }
 .nav .nav-bar .drone li:hover .drone2 {
   top: 25px;
+  margin: 25px;
 }
 .nav .nav-bar .drone li:hover .drone2 .drones ul {
   opacity: 1;
@@ -147,7 +149,7 @@ body {
   margin-left: 50%;
 }
 .droneimg ul li {
-  padding-top: 60px;
+  padding-top: 61px;
   list-style: none;
 }
 .droneimg ul li a {
@@ -162,7 +164,7 @@ body {
 .droneimg ul .iconka {
   margin: 10px;
   margin-top: 68px;
-  width: 1px;
+  width: 1.3px;
   height: 13px;
   background-color: #4c4c4c;
 }
@@ -567,157 +569,80 @@ body {
   margin-top: 8px;
 }
 
-.products-list {
+.register-login .login-page {
   width: 870px;
-  height: 517px;
-  padding-top: 30px;
+  height: 44px;
+  padding: 12px 14px 12px 14px;
+  text-align: center;
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  margin-top: 30px;
 }
-.products-list .active {
+.register-login .login-page a {
+  text-decoration: none;
+  color: #232323;
+}
+.register-login .login-page a:hover {
+  color: #D12121;
+}
+.register-login .form h5 {
+  margin-top: 15px;
+}
+.register-login .form hr {
   width: 870px;
-  height: 67px;
-  background-color: #f5f5f5;
-  padding-top: 16px;
 }
-.products-list .active ul li {
-  list-style: none;
+.register-login .form .label-control {
+  width: 860px;
+  height: 50px;
+}
+.register-login .form .label-control .star {
+  font-size: medium;
+  color: #DC473B;
+  padding-right: 5px;
+}
+.register-login .form .label-control .form-group {
+  color: #232323;
+  font-weight: 500;
+}
+.register-login .form .label-control .form-control {
+  width: 100%;
+  height: 34px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+}
+.register-login .form .subscribe .label {
+  color: #232323;
+  font-weight: 500;
+  padding: 3px;
+}
+.register-login .form .subscribe .radio .radio-inline {
   padding: 5px;
 }
-.products-list .active ul li a {
-  text-decoration: none;
-  color: #3a3939;
-  letter-spacing: 1px;
-}
-.products-list .active ul li a i {
-  padding: 1px;
-  color: #4e4c4c;
-  font-size: 20px;
-}
-.products-list .active ul li .icon i {
-  color: #c5c3c3 !important;
-}
-.products-list .active ul li li:hover {
-  color: #4e4c4c;
-}
-.products-list .active .select-wrapper {
-  margin-left: 200px;
-  margin-top: 8px;
-}
-.products-list .active .select-wrapper .form-control {
-  margin-top: -30px;
-  width: 150px;
-  height: 33px;
-  font-size: 14px;
-  border: 1px solid #e0e0e0;
-  background-color: #fff;
-  color: #333;
-  position: relative;
-  text-decoration: none;
-  white-space: nowrap;
-  text-align: left;
-  border-radius: 0;
-  box-shadow: none;
-  cursor: pointer;
-  margin-left: 62px;
-}
-.products-list .active .select-title {
-  margin-left: 12px;
-  margin-top: 8px;
-}
-.products-list .active .select-title span {
-  font-size: 16px;
+.register-login .form .buttons {
+  height: 40px;
+  width: 470px;
   margin: 10px;
-  padding-top: 15px;
+  margin-left: 45%;
 }
-.products-list .active .select-title .form-control {
-  margin-top: -30px;
-  width: 100px;
-  height: 33px;
+.register-login .form .buttons .privacy {
+  color: #7a7a7a;
+}
+.register-login .form .buttons .privacy a {
+  text-decoration: none;
+  color: #232323;
+}
+.register-login .form .buttons .privacy .input {
+  padding: 4px;
+}
+.register-login .form .buttons .privacy button {
+  width: 112px;
+  height: 40px;
+  border-radius: 0px;
   font-size: 14px;
-  border: 1px solid #e0e0e0;
-  background-color: #fff;
-  color: #333;
-  position: relative;
-  text-decoration: none;
-  white-space: nowrap;
-  text-align: left;
-  border-radius: 0;
-  box-shadow: none;
-  cursor: pointer;
-  margin-left: 62px;
-}
-.products-list .products-image .image {
-  width: 300px;
-  height: 358px;
-  margin-top: 18px;
-  padding-left: 27px;
-  position: relative;
-}
-.products-list .products-image .image img {
-  width: 270px;
-  height: 270px;
-}
-.products-list .products-image .image a {
-  text-decoration: none;
-  text-align: center;
-}
-.products-list .products-image .image a p {
-  color: #222222;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 550;
-  letter-spacing: 0.25px;
-  line-height: 20px;
-  padding: 6px;
-  padding-top: 15px;
-}
-.products-list .products-image .image p {
-  color: #eb4d4b;
-  font-size: 16px;
-  font-weight: 345;
-  margin-bottom: -2px;
-  text-align: center;
-  font-family: sans-serif;
-}
-.products-list .products-image .image .icon {
-  position: absolute;
-  margin-top: -40px;
-  margin-left: 90px;
-}
-.products-list .products-image .image .icon i {
-  color: #c3bfbf;
-  font-size: 11px;
-}
-.products-list .products-image .image .icon .iconca {
-  color: rgb(248, 193, 53) !important;
-}
-.products-list .products-image .image .btn-cart {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.5s;
-  text-align: center;
-}
-.products-list .products-image .image .btn-cart button {
-  position: relative;
-  border: none;
-  color: #fff;
-  border-radius: 0;
-  background-color: #eb4d4b;
-  padding: 10px 21px;
-  transition: all 0.5s;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-.products-list .products-image .image1 :hover .btn-cart button {
-  opacity: 1;
-}
-.products-list .active-end {
-  padding: 20px;
-  width: 870px;
-  height: 67px;
-  background-color: #f5f5f5;
-}/*# sourceMappingURL=collection.css.map */
+  margin-bottom: 5px;
+}/*# sourceMappingURL=register.css.map */

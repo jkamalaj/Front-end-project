@@ -35,20 +35,20 @@ body {
   width: 320px;
 }
 .nav .nav-bar .drone .drone1 .drones {
-  margin: 40px;
+  margin: 35px;
 }
 .nav .nav-bar .drone .drone1 .drones ul {
   position: absolute;
-  top: 20px;
   opacity: 0;
   width: 200px;
-  height: 250px;
+  height: 170px;
   background-color: white;
   transition: 0.3s;
 }
 .nav .nav-bar .drone .drone1 .drones ul li {
-  font-size: 15px;
+  font-size: 17px;
   color: rgb(0, 0, 0);
+  padding: 4px;
 }
 .nav .nav-bar .drone .drone1 .drones ul li a {
   font-size: 16px;
@@ -62,20 +62,20 @@ body {
   width: 300px;
 }
 .nav .nav-bar .drone .drone2 .drones {
-  margin: 20px;
+  margin: 30px;
 }
 .nav .nav-bar .drone .drone2 .drones ul {
   position: absolute;
-  top: 20px;
   opacity: 0;
   width: 210px;
-  height: 240px;
+  height: 170px;
   background-color: white;
   transition: 0.3s;
 }
 .nav .nav-bar .drone .drone2 .drones ul li {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
+  padding: 4px;
 }
 .nav .nav-bar .drone .drone2 .drones ul li a {
   font-size: 16px;
@@ -84,8 +84,10 @@ body {
 .nav .nav-bar .drone .drone2 .drones ul a:hover {
   color: #000000;
 }
+.nav .nav-bar .drone li:hover .drone1 {
+  top: 25px;
+}
 .nav .nav-bar .drone li:hover .drone1 .drones ul {
-  top: 40px;
   opacity: 1;
 }
 .nav .nav-bar .drone li:hover .drone2 {
@@ -751,7 +753,7 @@ body {
   background-color: #f2f6f9;
   width: 100%;
   height: 690px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .footer .contact {
   width: 560px;
@@ -969,7 +971,7 @@ body {
 .footerend {
   background-color: #1a1919;
   width: 100%;
-  height: 55px;
+  height: 60px;
   bottom: 0px;
 }
 .footerend a {
@@ -981,14 +983,14 @@ body {
   letter-spacing: 0.7px;
 }
 .footerend .footer-text {
-  margin: 15px;
+  margin: 19px;
 }
 .footerend .footer-img {
   margin-left: 25%;
 }
 .footerend .footer-img img {
   padding: 7px;
-  margin-top: 6px;
+  margin-top: 9px;
 }
 
 body {
