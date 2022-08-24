@@ -375,13 +375,15 @@ body{
 }
 
    .animation{
+    width: 1680px;
+    
+    margin-top: 35px;
     .row{
-        background-color: #FBFBFB;
-         height: 320px;
+        background-color: #fbfbfb;
+        height: 290px;
        .container{
-       
         .services{
-            margin: 90px;
+            margin: 60px;
             padding-left: 170px;
             display: block;
            text-align: center;
@@ -661,51 +663,70 @@ body{
             background-color:#EB4D4B;
             margin-left: 48%;
         }
+       .product-sec{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 34%;
         ul{
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-            li{
+         padding: 5px;
+            li {
                 list-style: none;
-                margin: 10px;
+                width: 130px;
+                height: 30px;
                 a{
+                    text-align: center;
                     text-decoration: none;
-                    color: #7a7a7a;
-                    font-size: 16px;
-                    display: inline-block;
+                    color: #3c3b3b;
+                    font-size: 20px;
                     letter-spacing: 0.42px;
                     font-weight: 400;
-                    text-transform: capitalize;
                     line-height: 20px;
-                    padding: 10px 20px;
-                    position: absolute;
+                   
                 }
                 
             }
            
             a:hover{
-                
-                  
-                    color: rgb(26, 26, 26);
-                
-                
+             color: rgb(26, 26, 26);
+            
+            }
+            li:hover{
+               
+                background-color: #f1efef;
             }
         }
+       }
     }
     .products{
         .product-section1{
-            margin-top: 80px;
+            margin-top: 20px;
             width: 1260px;
             .dron-item1{
                 position: relative;
                text-align: center;
+
+               a{
+                img{
+                    opacity: 1;
+                    display: block;
+                }
+                .img2{
+                    opacity: 0;
+                    position: absolute;
+                    top: 0px;
+
+                }
+               }
                 .icon{
                     width: 100%;
                     height: 10px;
                     position: absolute;
-                   
-                    bottom: 100px;
+                    bottom: 110px;
+                    right: 7%;
                     i{
                         color: rgb(240, 187, 16);
                         font-size: 12px;
@@ -713,33 +734,39 @@ body{
                    
                 }
                 .item-text{
-                    margin: 10px;
+                    margin-top: 10px;
+                    margin-right: 10%;
+                    h6{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
                     span{
                         color: #EB4D4B;
+                        font-size: 16px;
+                        font-weight: 500;
                     }
                 }
                 .btn-cart{
                     position: absolute;
-                    display: inline-block;
-                    transition: 0.5s;
-                   visibility: hidden;
+                    transition: 0.8s;
+                    margin-left: 30%;
                     font-size: 13px;
+                    bottom: 8px;
                     button{
-                       width: 120px;
+                       width: 130px;
                        height: 40px;
                         border: 0;
                         background-color: #EB4D4B;
+                        opacity: 0;
                         color: #fff;
                         text-align: center;
+                       
+                    }
+                    button:hover{
+                        background-color: #1a1919;
                     }
                 }
-                .dron-item1:hover{
-                    .btn-cart{
-                        visibility: visible;
-                        animation: cubic-bezier(0.165, 0.84, 0.44, 1);
-                    }
-                   
-                }
+               
                 .countdown-container{
                     position: absolute;
                     display: block;
@@ -758,6 +785,120 @@ body{
                         position: relative;
                         cursor: pointer;
                     }
+                }
+            }
+            .dron-item2{
+                position: relative;
+               text-align: center;
+               margin-top: 10px;
+               a{
+                img{
+                    opacity: 1;
+                    display: block;
+                }
+                .img2{
+                    opacity: 0;
+                    position: absolute;
+                    top: 0px;
+
+                }
+               }
+                .icon{
+                    width: 100%;
+                    height: 10px;
+                    position: absolute;
+                    right: 7%;
+                    bottom: 90px;
+                    i{
+                        color: rgb(240, 187, 16);
+                        font-size: 12px;
+                    }
+                   
+                }
+                .item-text{
+                    margin-top: 10px;
+                    margin-right: 10%;
+                    h6{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    span{
+                        color: #EB4D4B;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+                .btn-cart{
+                    position: absolute;
+                    transition: 0.8s;
+                    margin-left: 30%;
+                    font-size: 13px;
+                    top: 95%;
+                    button{
+                        bottom: 10px;
+                       width: 130px;
+                       height: 40px;
+                        border: 0;
+                        background-color: #EB4D4B;
+                        opacity: 0;
+                        color: #fff;
+                        text-align: center;
+                       
+                    }
+                    button:hover{
+                        background-color: #1a1919;
+                    }
+                }
+               
+                .countdown-container{
+                    position: absolute;
+                    display: block;
+                    text-align: center;
+                    bottom: 90px;
+                    opacity: 1;
+                    padding: 4px;
+                    background-color: #fff;
+                    box-shadow: 0 0 10px 4px rgb(165 165 165 / 10%);
+                    transition: 0.5s;
+                    .counter{
+                        display: inline-block;
+                        vertical-align: middle;
+                        text-align: center;
+                        font-weight: 500;
+                        position: relative;
+                        cursor: pointer;
+                    }
+                }
+            
+            }
+            .dron-item1:hover{
+                
+                button{
+                    opacity: 1;
+                    animation: cubic-bezier(0.187, 0.9, 0.9, 2);
+                   
+                }
+                .img1{
+                    opacity: 0;
+                }
+                .img2{
+                    opacity: 1;
+                    animation: cubic-bezier(0.187, 0.9, 0.9, 2);
+                }
+               
+            }
+            .dron-item2:hover{
+                button{
+                    opacity: 1;
+                    animation: cubic-bezier(0.187, 0.9, 0.9, 2);
+                   
+                }
+                .img1{
+                    opacity: 0;
+                }
+                .img2{
+                    opacity: 1;
+                    animation: cubic-bezier(0.187, 0.9, 0.9, 2);
                 }
             }
         }
@@ -1141,9 +1282,6 @@ body{
             }
          }
 
-         body{
-            overflow-x: hidden;
-         }
-    
+      
    
     
