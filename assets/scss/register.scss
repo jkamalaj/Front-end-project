@@ -2,10 +2,14 @@ body{
     overflow-x: hidden;
  }
  .nav{
-     position: fixed;
-     height: 88px;
+    position: fixed !important;
+    background-color: #fff;
+    z-index: 99;
+    animation: slide-down 0.7s;
+    overflow: visible;
+     height: 98px;
      background-color: white;
-     width: 1644px;
+     width: 100%;
     transition: 0.4s;
    
      img{

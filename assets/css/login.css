@@ -3,10 +3,14 @@ body {
 }
 
 .nav {
-  position: fixed;
-  height: 88px;
-  background-color: white;
-  width: 1644px;
+  position: fixed !important;
+  background-color: #fff;
+  z-index: 99;
+  -webkit-animation: slide-down 0.7s;
+          animation: slide-down 0.7s;
+  overflow: visible;
+  height: 98px;
+  width: 100%;
   transition: 0.4s;
 }
 .nav img {

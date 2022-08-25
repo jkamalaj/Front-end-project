@@ -3,10 +3,14 @@ body {
 }
 
 .nav {
-  position: fixed;
-  height: 88px;
-  background-color: white;
-  width: 1644px;
+  position: fixed !important;
+  background-color: #fff;
+  z-index: 99;
+  -webkit-animation: slide-down 0.7s;
+          animation: slide-down 0.7s;
+  overflow: visible;
+  height: 98px;
+  width: 100%;
   transition: 0.4s;
 }
 .nav img {
@@ -652,10 +656,6 @@ body {
   padding-left: 27px;
   position: relative;
 }
-.products-list .products-image .image img {
-  width: 270px;
-  height: 270px;
-}
 .products-list .products-image .image a {
   text-decoration: none;
   text-align: center;
@@ -678,6 +678,17 @@ body {
   text-align: center;
   font-family: sans-serif;
 }
+.products-list .products-image .image a img {
+  opacity: 1;
+  display: block;
+  width: 270px;
+  height: 270px;
+}
+.products-list .products-image .image a .img2 {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+}
 .products-list .products-image .image .icon {
   position: absolute;
   margin-top: -40px;
@@ -691,29 +702,73 @@ body {
   color: rgb(248, 193, 53) !important;
 }
 .products-list .products-image .image .btn-cart {
-  display: inline-block;
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.5s;
-  text-align: center;
+  transition: 0.8s;
+  margin-left: 25%;
+  font-size: 13px;
+  top: 87%;
 }
 .products-list .products-image .image .btn-cart button {
-  position: relative;
-  border: none;
+  width: 130px;
+  height: 35px;
+  border: 0;
+  background-color: #EB4D4B;
+  opacity: 0;
   color: #fff;
-  border-radius: 0;
-  background-color: #eb4d4b;
-  padding: 10px 21px;
-  transition: all 0.5s;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  text-align: center;
 }
-.products-list .products-image .image1 :hover .btn-cart button {
+.products-list .products-image .image .btn-cart button:hover {
+  background-color: #1a1919;
+}
+.products-list .products-image .image .item-wrapper {
+  position: absolute;
+  width: 50px;
+  height: 200px;
+  top: 0px;
+  right: 0px;
+}
+.products-list .products-image .image .item-wrapper .item-title {
+  text-align: center;
+  padding: 9px;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e7e3e3;
+  background-color: #ffffff;
+  opacity: 0;
+  transition: 0.8s;
+}
+.products-list .products-image .image .item-wrapper .item-title a {
+  text-decoration: none;
+  color: #1a1919;
+}
+.products-list .products-image .image .item-wrapper .item-title a i {
+  font-size: 16px;
+}
+.products-list .products-image .image .item-wrapper .item-title:hover {
+  background-color: #eb4d4b;
+}
+.products-list .products-image .image .item-wrapper .item-title:hover a {
+  color: #FFF;
+}
+.products-list .products-image .image:hover button {
   opacity: 1;
+  -webkit-animation: cubic-bezier(0.187, 0.9, 0.9, 2);
+          animation: cubic-bezier(0.187, 0.9, 0.9, 2);
+}
+.products-list .products-image .image:hover .img1 {
+  opacity: 0;
+}
+.products-list .products-image .image:hover .img2 {
+  opacity: 1;
+  -webkit-animation: cubic-bezier(0.187, 0.9, 0.9, 2);
+          animation: cubic-bezier(0.187, 0.9, 0.9, 2);
+}
+.products-list .products-image .image:hover .item-title {
+  opacity: 1;
+  -webkit-animation: cubic-bezier(0.187, 0.9, 0.9, 2);
+          animation: cubic-bezier(0.187, 0.9, 0.9, 2);
 }
 .products-list .active-end {
   padding: 20px;
