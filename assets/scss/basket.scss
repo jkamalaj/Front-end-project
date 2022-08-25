@@ -521,5 +521,27 @@ body{
                 }
             }
         }
+        .basket{
+            .basket-not-empty{
+                table{
+                    border: 1px solid #9c9b9b;
+                    width: 100%;
+                    margin-top: 20px;
+                    font-size: 14px;
+                    text-align: center;
+                
+                    th{
+                        border: 1px solid #9c9b9b;
+                        height: 30px;
+                        
+                    }
+                
+                    td{
+                        border: 1px solid #9c9b9b;
+                        height: 100px;  
+                    }
+                }
+            }
+        }
       }
    

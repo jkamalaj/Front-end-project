@@ -1,6 +1,7 @@
 body{
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 .nav{
     position: fixed !important;
@@ -145,6 +146,82 @@ body{
     .search{
        margin: 26px;
        margin-left: -10px ;
+       .basket{
+        margin-left: -90%;
+        margin-top: 10px;
+        width: 370px;
+        height: 300px;
+        border: 1px solid #e7e3e3;
+        background-color: #fffbfb;
+        opacity: 0;
+        .image{
+            width: 340px;
+            height: 80px;
+            margin-right: 30px;
+            .about{
+                height: 60px;
+               
+              p{
+                font-size: 14px;
+                font-weight: 500;
+                padding: 3px;
+                margin-bottom: 1px;
+              }
+              span{
+                color: #787878;
+                font-weight: 400;
+              }
+             
+            }
+            a{
+                margin-left: -50px;
+                margin-top: -30px;
+                img{
+                    width: 100px;
+                    height: 90px;
+                }
+            }
+        }
+        hr{
+            color: #cbc7c7;
+        }
+        .image-about{
+            width: 100%;
+            padding-left: 5px;
+            text-align: left;
+            font-size: 12px;
+            .left{
+
+                p{
+                    font-weight: 500;
+                    padding: 0px;
+                }
+            }
+            .right{
+                text-align: right;
+                padding-right: 8px;
+                p{
+                    font-weight: 400;
+                }
+            
+            }
+        }
+        .btncart{
+            margin-bottom: 80px;
+            text-align: center;
+            button{
+                width: 120px;
+                height: 40px;
+                border-radius: 0px;
+                a{
+                    font-size: 12px;
+                text-align: center;
+                color: white;
+                }
+            }
+
+        }
+       }
         li{
             list-style: none;
            
@@ -167,6 +244,9 @@ body{
     .search li:hover{
         a{
             color: rgb(19, 18, 18);
+        }
+        .basket{
+            opacity: 1;
         }
        
     }
@@ -578,7 +658,7 @@ body{
     }
     .users{
        
-        .users-details{
+        .item{
            position: relative;
             margin-top: 280px;
             background-color: #FFF;
@@ -1362,6 +1442,5 @@ body{
             }
          }
 
-      
    
     

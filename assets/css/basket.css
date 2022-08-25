@@ -431,4 +431,19 @@ body {
   background-color: #1a1919;
   color: #f5f5f5;
   border-radius: 0px;
+}
+.container .basket .basket-not-empty table {
+  border: 1px solid #9c9b9b;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+.container .basket .basket-not-empty table th {
+  border: 1px solid #9c9b9b;
+  height: 30px;
+}
+.container .basket .basket-not-empty table td {
+  border: 1px solid #9c9b9b;
+  height: 100px;
 }/*# sourceMappingURL=basket.css.map */

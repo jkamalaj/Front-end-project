@@ -599,7 +599,7 @@ body {
   margin-top: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.account-login .customer .btn button {
+.account-login .customer .btncart button {
   color: white;
   background-color: #232323;
   width: 116px;
@@ -607,7 +607,7 @@ body {
   font-size: 15px;
   border: none;
 }
-.account-login .customer .btn button:hover {
+.account-login .customer .btncart button:hover {
   background-color: #CB2027;
 }
 .account-login .returning-customer {
@@ -642,7 +642,7 @@ body {
 .account-login .returning-customer a:hover {
   color: #D12121;
 }
-.account-login .returning-customer .btn button {
+.account-login .returning-customer .btncart button {
   color: white;
   background-color: #232323;
   width: 80px;
@@ -652,7 +652,7 @@ body {
   margin-top: 5px;
   border: none;
 }
-.account-login .returning-customer .btn button:hover {
+.account-login .returning-customer .btncart button:hover {
   background-color: #CB2027;
 }
 .account-login .returning-customer .control-label {
